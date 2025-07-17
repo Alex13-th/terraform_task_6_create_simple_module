@@ -12,8 +12,7 @@ provider "azurerm" {
 }
 
 module "resource_group_storage" {
-  source  = "app.terraform.io/Alex13-th/resource_group_storage/azurerm"
-  version = "1.0.0"
+  source = "github.com/Alex13-th/terraform-azurerm-resource_group_storage"
 
   resource_group_name   = "my-rg"
   location              = "West Europe"
